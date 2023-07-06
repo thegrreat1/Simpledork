@@ -2,8 +2,8 @@
 Simple python google dork tool - Preventing google captcha
 
 ***********************************************************
-Simpledork requires python google lib to be installed with
-pip install google
+Simpledork requires python google and fakeuseragent lib to be installed with
+pip install -r requirements.txt
 ***********************************************************
 
 Usage: python3 simpledork.py QUERY AMOUNTOFPAGESTOSEARCH <br />
