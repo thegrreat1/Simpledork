@@ -1,4 +1,7 @@
 import sys
+import random
+import time
+from fake_useragent import UserAgent
 
 try:
     from googlesearch import search
@@ -16,6 +19,8 @@ print("""
 ╚═════╝░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░╚══════╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝
 """)
 
+ua = UserAgent()
+
  
 if len(sys.argv) >= 2:
 	if __name__ == "__main__":
@@ -23,8 +28,9 @@ if len(sys.argv) >= 2:
 		pages = int(sys.argv[2])   
 		
 		print("To prevent google captcha this is going to take a while. Go grab a coffee! ;)\n")
-	for j in search(query, tld="co.in", num=pages, stop=pages, pause=60):
+	for j in search(query, tld="co.in", num=pages, stop=pages, pause=60 + random.randrange(2, 20), user_agent=ua.random):
 		print(j)
+		time.sleep(random.uniform(1, 3))
 else:
 	print("Usage: python3 simpledork.py QUERY AMOUNTOFPAGESTOSEARCH")
 	print("Example: python3 simpledork.py inurl:" + '"' + "/admin/login.php" +'"' + " 10")
