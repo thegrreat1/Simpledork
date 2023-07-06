@@ -27,6 +27,6 @@ if len(sys.argv) >= 2:
 		print(j)
 else:
 	print("Usage: python3 simpledork.py QUERY AMOUNTOFPAGESTOSEARCH")
-	print("Example: python3 simpledork.py inurl:" + '"' + "/admin/login.php" +'"')
+	print("Example: python3 simpledork.py inurl:" + '"' + "/admin/login.php" +'"' + " 10")
 	sys.exit(1)
 	
