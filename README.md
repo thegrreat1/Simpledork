@@ -1,5 +1,6 @@
 # Simpledork
 Simple python google dork tool - Preventing google captcha
+** To prevent CAPTCHA use a longer sleeptime between each search
 
 ***********************************************************
 Simpledork requires python google and fakeuseragent lib to be installed <br />
