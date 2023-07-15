@@ -1,5 +1,5 @@
 # Simpledork
-Simple python google dork tool - Preventing google captcha
+Simple python google dork tool - Preventing google captcha<br>
 ** To prevent CAPTCHA use a longer sleeptime between each search
 
 ***********************************************************
